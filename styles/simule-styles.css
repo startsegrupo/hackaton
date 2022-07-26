@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+    margin: 5px;
+    padding: 5px;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    box-sizing:border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+

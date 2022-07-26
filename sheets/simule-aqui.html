@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/simule-style.css" class="css">
+  <title>Serviços Financeiros</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Serviços Financeiros</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="./index.html">Página Inicial</a></li>
+                <li><a class="dropdown-item" href="./como-funciona.html">Como funciona?</a></li>
+                <li><a class="dropdown-item" href="./quem-somos.html">Quem Somos?</a></li>
+                <li><a class="dropdown-item" href="./fale-conosco.html">Fale Conosco</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Realize sua Simulação:</h1>
+    <p>Preencha os campos abaixo e envie a documentação comprobatória. Nossos analistas verificarão se a empresa
+      encaixa-se no perfil esperado e entraremos em contato em breve!</p>
+    <form id="form">
+      <fieldset class="form-group col-md-4">
+        <legend>
+          Dados da empresa:
+        </legend>
+        <div class="form-group col-md-4" >
+          <label class="pb-lg-2">Nome Completo:</label>
+          <input type="text" class="form-control form-control-sm " aria-label=".form-control-sm example"
+            placeholder="Nome Completo" required>
+        </div>
+        <div class="form-group col-md-4 mb-3" >
+          <label class="pb-2">Nome da Empresa:</label>
+          <input type="text"class="form-control form-control-sm col-xs-4" aria-label=".form-control-sm example" placeholder="Nome da Empresa" required>
+        </div>
+        <div class="form-group mb-3">
+          <label class="pb-2">Tempo de atividade:</label>
+          <input type="date" placeholder="Tempo de atividade" required>
+        </div>
+        <div class="form-group mb-3">
+          <label class="pb-2">CEP:</label>
+          <input type="text"class="form-control form-control-sm input-group-sm w-10" placeholder="CEP da matriz" required>
+        </div>
+        <div class="form-group col-md-4" >
+          <label class="pb-2">Endereço da matriz da empresa:</label>
+          <input type="text" class="form-control form-control-sm col-xs-4 mb-3" aria-label=".form-control-sm example" placeholder="Endereço da matriz" required>
+        </div>
+        <div class="form-group col-md-4" >
+          <label class="pb-2">Cidade da matriz da empresa:</label>
+          <input type="text" placeholder="Cidade da matriz" required>
+        </div>
+        <div class="form-group mb-3 col-md-4">
+          <label class="pb-2">Estado da matriz da empresa:</label>
+          <input type="text" placeholder="Estado da matriz" required>
+        </div>
+        <div class="input-group mb-3 col-md-4">
+          <label for="basic-url" class="form-label">Site da Empresa:</label><br>
+          <span class="input-group-text" id="basic-addon3">https://exemplo.com/</span>
+          <input class="form-control ml-3" size="30" id="url" aria-describedby="basic-addon3" type="url" placeholder="Site da empresa">
+        </div>
+        <div class="form-group mb-3 col-md-4">
+          <label>Telefone para contato:</label>
+          <input type="tel" placeholder="Telefone de contato" required>
+        </div>
+        <div class="form-group mb-3 col-md-4">
+          <label>Telefone para recados:</label>
+          <input type="tel" placeholder="Telefone secundário">
+        </div>
+        <div class="form-group mb-3 col-md-4">
+          <label>e-mail:</label>
+          <input type="email" size="30" placeholder="nome@site.com" required>
+        </div>
+      </fieldset>
+     <fieldset class="form-group col-md-4">
+      <legend>
+        Informações sobre o empréstimo:
+      </legend>
+      <div class="form-group mb-3">
+        <label>Valor do empréstimo:</label>
+        <input type="text" placeholder="Valor em Reais" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="checkbox" class="mb-3">Prazo para pagamento:</label>
+        <select id="opcoes" required>
+          <option value="2">--Opções:--</option>
+          <option value="2">18 meses</option>
+          <option value="3">24 meses</option>
+          <option value="4">36 meses</option>
+          <option value="4">48 meses</option>
+      </div>
+      <div class="form-group mb-3 mt-3">
+        <label for="formFileMultiple" class="form-label">Documentos Comprobatórios:</label>
+        <input class="form-control" type="file" placeholder="Documentos comprobatórios" required>
+      </div>
+     </fieldset>
+      
+      <div class="form-check mb-3">
+        <label class="form-check-label" for="flexCheckChecked">Li e concordo com os termos deste serviço.</label>
+        <input id="flexCheckDefault" class="form-check-input" type="checkbox" placeholder="Aceito os termos" required>
+      </div>
+
+      <button class="btn btn-secondary mb-3" type="button" placeholder="Calcular">Calcular</button>
+      <button class="btn btn-danger mb-3"type="button" placeholder="Resetar">Limpar</button>
+    </form>
+  </main>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="../script/simule-script.js"></script>
+
+</html>
