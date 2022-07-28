@@ -9,6 +9,7 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/simule-styles.css" class="css">
   <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <title>Serviços Financeiros</title>
 </head>
 
@@ -40,11 +41,10 @@
       </div>
     </nav>
   </header>
-
   <main class="p-2">
     <h1>Realize sua Simulação:</h1>
-    <p>Preencha os campos abaixo e envie a documentação comprobatória. Nossos analistas verificarão se a empresa
-      encaixa-se no perfil esperado e entraremos em contato em breve!</p>
+    <p>Preencha os campos abaixo para realziar a simulação. Caso obtenha o score acima de 70, um de nossos analistas
+      entrará em contato para prosseguir com a operação.</p>
     <form>
       <fieldset class="card w-100 my-5">
         <div div class="card-body">
@@ -63,13 +63,17 @@
           </div>
           <div class="row my-4">
             <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example3">Tempo de atividade:</label>
-              <input type="date" id="form6Example3" class="form-control-sm" placeholder="Tempo de atividade" required>
+              <div id="date-picker-example" class="form outline input-with-post-icon datepicker w-30" inline="true">
+                <label for="example">Tempo de atividade:</label>
+                <input type="date" id="datepicker" class="form-control">
+                <i class="fas fa-calendar input-prefix"></i>
+              </div>
             </div>
-            <br>
-            <div class="form-outline">
-              <label class="form-label" for="form6Example3">CEP:</label>
-              <input type="text" id="form6Example3" class="form-control-sm" placeholder="CEP da matriz" required>
+            <div class="col-md-6">
+              <div class="md-form form-group">
+                <label for="inputZipMD">CEP da matriz:</label>
+                <input type="text" class="form-control" id="inputZipMD" placeholder="xxxxx-xxx">
+              </div>
             </div>
           </div>
           <div class="row my-4">
@@ -108,8 +112,6 @@
               <input type="email" id="form6Example5" class="form-control" placeholder="nome@site.com" required>
             </div>
           </div>
-        
-       
           <legend class="card-title text-center">
             Informações sobre o empréstimo:
           </legend>
@@ -147,7 +149,7 @@
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
               </select>
-              </div>
+            </div>
           </div>
           <div class="row my-4">
             <div class="form-outline">
@@ -157,14 +159,38 @@
               </div>
             </div>
           </div>
-              <div class="form-group col-12 mt-4">
-                <button class="btn btn-secondary" type="button" placeholder="Calcular">Calcular</button>
-                <button class="btn btn-danger" type="button" placeholder="Resetar">Limpar</button>
-              </div>
-            </div>
-      </fieldset>    
+          <div class="form-group col-12 mt-4">
+            <button class="btn btn-secondary" type="button" placeholder="Calcular">Calcular</button>
+            <button class="btn btn-danger" type="button" placeholder="Resetar">Limpar</button>
+          </div>
+        </div>
+      </fieldset>
     </form>
   </main>
+  
+
+    <footer class="text-left text-lg-start" style="background-color:#edf2f4">
+      <div class="container d-flex justify-content-evenly w-100">
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #edf6f9">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color:#edf6f9;">
+          <i class="fab fa-youtube"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #edf6f9;">
+          <i class="fa-brands fa-instagram"></i>
+        </button>
+        <button type="button" href="#" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #edf6f9;">
+         
+        </button>
+      </div>
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022
+      </div>
+      
+    </footer>
+    
+ 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
