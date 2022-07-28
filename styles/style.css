@@ -28,7 +28,6 @@ body {
     
 }
    
-
 .text{
     display:grid;
     position:absolute;
@@ -43,6 +42,23 @@ body {
 .text h1{
     font-weight: 700;
 }
+.text h1, p{
+    background: linear-gradient(to left, #3e92cc 20%, #2a628f 40%, #16324f 60%, #3e92cc 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
+}
+
 #fade-in {
     display: flex;
     position: relative;
@@ -97,52 +113,9 @@ body {
 #fade-in img:nth-of-type(4) {
     animation-delay: 16s;
 }
-footer {
-
-    margin-top: auto; 
-    height: 0px;
+#footer {
+    position: relative;
+    height: 0;
     clear:both;
     z-index: 1;
   }
-
-  /*QUEM SOMOS*/
-
-  .description-container {
-    padding: 2rem;
-    margin: 1rem;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    
-    
-  }
-
-  #description-item {
-    margin: 5rem;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  #description-title {
-    color:#f8f8f8;
-    font-size: 2.3rem;
-    justify-content: center;
-    align-items: auto;
-    text-align: center;
-  }
-
-  #description-text{
-    /*background-color: #e2e2e2;*/
-    font-size: 1.2rem;
-    padding: 2rem;
-    color:#00020b;
-    text-align: center;
-    list-style:none;
-
-  }
-
-  
