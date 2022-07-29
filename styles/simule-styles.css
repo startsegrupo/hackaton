@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 html {
-    margin: 5px;
+    margin: 0px;
     padding: 5px;
     height: 100%;
 }
@@ -16,7 +16,10 @@ body {
     box-sizing:border-box;
     font-family: 'DM Sans', sans-serif;
 }
+
+
 form {
+    display: flex;
     width: 750px;
 }
 legend {
@@ -25,6 +28,8 @@ legend {
     margin-bottom: 5px;
 }
 fieldset{
+    display: flex;
+    position: absolute;
     padding-left: 0;
     border-top: 1px dotted grey;
 }
@@ -32,7 +37,3 @@ fieldset >div {
     padding: 5px 0;
     font-size: 15px;
 }
-
-
-
-
