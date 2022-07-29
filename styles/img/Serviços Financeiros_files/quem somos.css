@@ -22,8 +22,8 @@
         min-height: 100vh;
         box-sizing:border-box;
         background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
-       
-    
+        font-family: 'DM Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
         
 }
 
@@ -31,18 +31,16 @@
 
     display: grid;
     flex-direction: column;
-    padding:2%;
+    padding: 0;
     justify-content: space-around;
     align-items: center;
     background-color:#e2e2e2 ;
-    
+
   
 }
 
 #description-title {
     color: #001a43;
-    border: 2px solid #001a43;
-
 }
 
 
