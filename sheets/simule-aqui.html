@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="stylesheet" href="../styles/simule-styles.css" class="css">
-  <link rel="stylesheet" type="text/css" href="custom.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/simule-styles.css" class="css">
+  <!-- <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" type="text/css" href="path/to/font-awesome/css/font-awesome.min.css"> -->
   <title>Serviços Financeiros</title>
 </head>
 
@@ -41,127 +41,147 @@
       </div>
     </nav>
   </header>
+
   <main class="p-2">
     <h1>Realize sua Simulação:</h1>
     <p>Preencha os campos abaixo para realziar a simulação. Caso obtenha o score acima de 70, um de nossos analistas
       entrará em contato para prosseguir com a operação.</p>
-    <form>
+    
+      <form id="simule-form">
       <fieldset class="card w-100 my-5">
         <div div class="card-body">
           <legend class="card-title text-center">
             Dados da empresa:
           </legend>
           <div class="row my-4">
-            <div div class="form-outline mb-4">
-              <label class="form-label" for="form6Example1">Nome Completo do Sócio:</label>
-              <input type="text" id="form6Example1" class="form-control" placeholder="Nome Completo" required>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="nomeEmpresa">Nome da Empresa:</label>
+              <input type="text" id="nomeEmpresa" class="form-control" placeholder="Nome da Empresa" required>
             </div>
+
             <div class="form-outline">
-              <label class="form-label" for="form6Example2">Nome da Empresa:</label>
-              <input type="text" id="form6Example2" class="form-control" placeholder="Nome da Empresa" required>
+              <label class="form-label" for="cnpj">CNPJ da Empresa:</label>
+              <input type="text" id="cnpj" class="form-control" placeholder="xx.xxx.xxx/xxxx-xx" required>
             </div>
           </div>
+
           <div class="row my-4">
+
             <div class="form-outline mb-4">
-              <div id="date-picker-example" class="form outline input-with-post-icon datepicker w-30" inline="true">
-                <label for="example">Tempo de atividade:</label>
-                <input type="date" id="datepicker" class="form-control">
-                <i class="fas fa-calendar input-prefix"></i>
-              </div>
+              <label class="form-label" for="nomeSocio">Nome Completo do Sócio:</label>
+              <input type="text" id="nomeSocio" class="form-control" placeholder="Nome Completo" required>
             </div>
+
+            <div class="form-outline">
+              <label class="form-label" for="cpf">CPF do Sócio:</label>
+              <input type="text" id="cpf" class="form-control" placeholder="xxx.xxx.xxx-xx" required>
+            </div>
+          </div>
+          
+          <div class="row my-4">
             <div class="col-md-6">
               <div class="md-form form-group">
-                <label for="inputZipMD">CEP da matriz:</label>
-                <input type="text" class="form-control" id="inputZipMD" placeholder="xxxxx-xxx">
+                <label for="cep">CEP da matriz:</label>
+                <input type="text" class="form-control" id="cep" placeholder="xxxxx-xxx">
               </div>
             </div>
           </div>
           <div class="row my-4">
             <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example5">Endereço da matriz:</label>
-              <input type="text" id="form6Example4" class="form-control" placeholder="Endereço da matriz" required>
+              <label class="form-label" for="endereco">Endereço da matriz:</label>
+              <input type="text" id="endereco" class="form-control" placeholder="Endereço da matriz" required>
             </div>
             <div class="form-outline">
-              <label class="form-label" for="form6Example5">Cidade da matriz:</label>
-              <input type="text" id="form6Example5" class="form-control" placeholder="Cidade da matriz" required>
+              <label class="form-label" for="cidade">Cidade da matriz:</label>
+              <input type="text" id="cidade" class="form-control" placeholder="Cidade da matriz" required>
             </div>
           </div>
           <div class="row my-4">
             <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example5">Estado da matriz:</label>
-              <input type="text" id="form6Example5" class="form-control" placeholder="Estado da matriz" required>
+              <label class="form-label" for="estado">Estado da matriz:</label>
+              <input type="text" id="estado" class="form-control" placeholder="Estado da matriz" required>
             </div>
             <div class="form-outline">
-              <label class="form-label" for="form6Example5">Site da Empresa:</label>
-              <input type="url" id="form6Example5" class="form-control" placeholder="https://exemplo.com/">
+              <label class="form-label" for="site">Site da Empresa:</label>
+              <input type="url" id="site" class="form-control" placeholder="https://exemplo.com/">
             </div>
           </div>
           <div class="row my-4">
             <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example6">Telefone para contato:</label>
-              <input type="tel" id="form6Example6" class="form-control" placeholder="Telefone de contato" required>
+              <label class="form-label" for="telefoneContato">Telefone para contato:</label>
+              <input type="tel" id="telefoneContato" class="form-control" placeholder="Telefone de contato" required>
             </div>
             <div class="form-outline">
-              <label class="form-label" for="form6Example6">Telefone para recados:</label>
-              <input type="tel" id="form6Example6" class="form-control" placeholder="Telefone secundário">
+              <label class="form-label" for="telefoneRecado">Telefone para recados:</label>
+              <input type="tel" id="telefoneRecado" class="form-control" placeholder="Telefone secundário">
             </div>
           </div>
           <div class="row my-4">
             <div class="form-outline">
-              <label class="form-label" for="form6Example5">e-mail:</label>
-              <input type="email" id="form6Example5" class="form-control" placeholder="nome@site.com" required>
+              <label class="form-label" for="email">e-mail:</label>
+              <input type="mail" id="email" class="form-control" placeholder="nome@mail.com" required>
             </div>
           </div>
           <legend class="card-title text-center">
-            Informações sobre o empréstimo:
+            Informações Financeiras
           </legend>
           <div class="row my-4">
             <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example1">Valor do empréstimo:</label>
-              <input type="text" id="form6Example1" class="form-control" placeholder="Valor em Reais (R$)" required>
+              <label class="form-label" for="valorEmprestimo">Faturamento bruto ano anterior:</label>
+              <input type="text" id="fatBruto" class="form-control" placeholder="Valor em Reais (R$)" required>
             </div>
-            <div class="form-outline">
-              <label for="checkbox" class="form-label" for="form6Example1">Prazo para pagamento:</label>
-              <select id="opcoes" class="form-select" required>
-                <option value="0" selected>--Opções:--</option>
-                <option value="18">18 meses</option>
-                <option value="24">24 meses</option>
-                <option value="36">36 meses</option>
-                <option value="48">48 meses</option>
-              </select>
+            <div class="form-outline mb-4">
+              <label class="form-label" for="valorEmprestimo">Despesas fixas ano anterior:</label>
+              <input type="text" id="despesasFixas" class="form-control" placeholder="Valor em Reais (R$)" required>
+            </div>
+            <div class="form-outline mb-4">
+              <label class="form-label" for="valorEmprestimo">Despesas variáveis ano anterior:</label>
+              <input type="text" id="despesasVariaveis" class="form-control" placeholder="Valor em Reais (R$)" required>
             </div>
           </div>
           <div class="row my-4">
+
             <div class="form-outline mb-4">
-              <label for="checkbox" class="form-label" for="form6Example3">Realizou o curso: "Educação
-                Financeira?</label>
-              <select class="form-select form-select" aria-label=".form-select example">
-                <option selected>--Opções:--</option>
-                <option value="1">Sim</option>
-                <option value="2">Não</option>
+              <label for="checkbox" class="form-label" for="tempoAtividade">Tempo de atividade</label>
+              <select id="tempoAtividade" class="form-select" required>
+                <option value="0" selected>--Opções:--</option>
+                <option value="1">Até 1 ano</option>
+                <option value="1-3">Entre 1 e 3 anos</option>
+                <option value="3+">Acima de 3 anos</option>
               </select>
             </div>
+
             <div class="form-outline mb-4">
-              <label for="checkbox" class="form-label" for="form6Example3">Já empreendeu anteriormente e não obteve
-                sucesso?</label>
-              <select id="opcoes" class="form-select" required>
+              <label for="checkbox" class="form-label" for="empreendeuAntes">Já empreendeu anteriormente?</label>
+              <select id="empreendeuAntes" class="form-select" required>
                 <option value="0" selected>--Opções:--</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
               </select>
             </div>
+
+            <div class="form-outline mb-4">
+              <label for="checkbox" class="form-label" for="possuiEmprestimo">Possui algum empréstimo em andamento?</label>
+              <select id="possuiEmprestimo" class="form-select" required>
+                <option value="0" selected>--Opções:--</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </div>
+
           </div>
           <div class="row my-4">
             <div class="form-outline">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="check1" name="option1" value="checkbox">
+                <input id="concordaTermos" class="form-check-input" type="checkbox" name="concordaTermos">
                 <label class="form-check-label">Li e concordo com os termos.</label>
               </div>
             </div>
           </div>
           <div class="form-group col-12 mt-4">
-            <button class="btn btn-secondary" type="button" placeholder="Calcular">Calcular</button>
-            <button class="btn btn-danger" type="button" placeholder="Resetar">Limpar</button>
+            <button id="botaoCalcular" class="btn btn-secondary" type="button" placeholder="Calcular">Calcular</button>
+            <button id="botaoLimpar" class="btn btn-danger" type="button" placeholder="Resetar">Limpar</button>
           </div>
         </div>
       </fieldset>
@@ -194,6 +214,6 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="../script/simule-script.js"></script>
+<script type="module" src="../script/simule-script.js"></script>
 
 </html>
