@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../styles/simule-styles.css" class="css">
-  <link rel="stylesheet" type="text/css" href="custom.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  
   <title>Serviços Financeiros</title>
 </head>
 
@@ -33,7 +33,7 @@
                 <li><a class="dropdown-item" href="./index.html">Página Inicial</a></li>
                 <li><a class="dropdown-item" href="./como-funciona.html">Como funciona?</a></li>
                 <li><a class="dropdown-item" href="./quem-somos.html">Quem Somos?</a></li>
-                <li><a class="dropdown-item" href="./fale-conosco.html">Fale Conosco</a></li>
+                <li><a class="dropdown-item" href="./dashboard.html">Área do Cliente</a></li>
               </ul>
             </li>
           </ul>
@@ -43,11 +43,11 @@
   </header>
   <main class="p-2">
     <h1>Realize sua Simulação:</h1>
-    <p>Preencha os campos abaixo para realziar a simulação. Caso obtenha o score acima de 70, um de nossos analistas
+    <p>Preencha os campos abaixo para realizar a simulação.<br>Caso obtenha o score acima de 70, um de nossos analistas
       entrará em contato para prosseguir com a operação.</p>
-    <form>
-      <fieldset class="card w-100 my-5">
-        <div div class="card-body">
+    <form class="container w-100 justify-content-center">
+      <fieldset class="d-flex card my-3">
+        <div div class=" card-body">
           <legend class="card-title text-center">
             Dados da empresa:
           </legend>
@@ -66,7 +66,6 @@
               <div id="date-picker-example" class="form outline input-with-post-icon datepicker w-30" inline="true">
                 <label for="example">Tempo de atividade:</label>
                 <input type="date" id="datepicker" class="form-control">
-                <i class="fas fa-calendar input-prefix"></i>
               </div>
             </div>
             <div class="col-md-6">
@@ -160,40 +159,39 @@
             </div>
           </div>
           <div class="form-group col-12 mt-4">
-            <button class="btn btn-secondary" type="button" placeholder="Calcular">Calcular</button>
+            <button id="button" class="btn btn-secondary" onclick="window.location = '../sheets/dashboard.html';" type="button" placeholder="Calcular">Calcular</button>
             <button class="btn btn-danger" type="button" placeholder="Resetar">Limpar</button>
           </div>
         </div>
       </fieldset>
     </form>
   </main>
-  
-
-    <footer class="text-left text-lg-start" style="background-color:#edf2f4">
-      <div class="container d-flex justify-content-evenly w-100">
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #edf6f9">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color:#edf6f9;">
-          <i class="fab fa-youtube"></i>
-        </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #edf6f9;">
-          <i class="fa-brands fa-instagram"></i>
-        </button>
-        <button type="button" href="#" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #edf6f9;">
-         
-        </button>
-      </div>
-      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2022
-      </div>
-      
-    </footer>
-    
- 
+  <footer class="text-left text-lg-start" style="background-color:#6c757d">
+    <div class="container d-flex justify-content-evenly w-100">
+      <button type="button" href="#fb" class="btn btn-outline-light btn-lg btn-floating mx-2" style="background-color: #6c757d">
+        <i class="fa-brands fa-square-facebook"></i>
+      </button>
+      <button type="button" href="#instagram"class="btn btn-outline-light btn-lg btn-floating mx-2" style="background-color: #6c757d">
+        <i class="fa-brands fa-instagram"></i>
+      </button>
+      <button type="button" href="#whatsapp" class="btn btn-outline-light btn-lg btn-floating mx-2" style="background-color: #6c757d">
+        <i class="fa-brands fa-square-whatsapp"></i>
+      </button>
+      <button type="button" href="#twitter" class="btn btn-outline-light btn-lg btn-floating mx-2" style="background-color:#6c757d">
+        <i class="fa-brands fa-square-twitter"></i>
+      </button>
+      <button type="button" href="#gmail" class="btn btn-outline-light btn-lg btn-floating mx-2" style="background-color: #6c757d">
+        <i class="fa-brands fa-google"></i>
+      </button>
+    </div>
+    <div class="text-center text-white p-3" style="background-color: #212529;">
+      © 2022
+    </div>
+  </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="../script/simule-script.js"></script>
+<script src="https://kit.fontawesome.com/fd68593917.js" crossorigin="anonymous"></script>
 
 </html>
